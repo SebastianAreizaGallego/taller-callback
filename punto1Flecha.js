@@ -8,7 +8,7 @@ let matricularPadawan=(nombre,planeta,edad,estatura,clasificar)=>{
     clasificar(padawan);
 }
 
-matricularPadawan('Qui-Gon Jinn', 'desconocido', 16, 193, function(aprendiz){
+matricularPadawan('Qui-Gon Jinn', 'desconocido', 16, 193, aprendiz=>{
     if(aprendiz.edad<15){
         console.log(`${aprendiz.nombre} del planeta ${aprendiz.planeta}, como tienes ${aprendiz.edad} años has sido asignado al entrenamiento del manejo de la fuerza`)
     }else{
